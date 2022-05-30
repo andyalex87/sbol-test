@@ -1,3 +1,3 @@
 # sbol-test
 
-sbol-test is a community maintained Jupyter Docker Stack image
+sbol-test is a Jupyter Docker Image stack designed for tutorials
