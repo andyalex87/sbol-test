@@ -59,8 +59,8 @@ jobs:
       - name: Build # Build only to be able to run tests
         uses: docker/build-push-action@v2
         with:
-          context: image/
-          file: image/Dockerfile
+          context: 
+          file: Dockerfile
           tags: |
             andyalex87/sbol-test:latest
           push: false
