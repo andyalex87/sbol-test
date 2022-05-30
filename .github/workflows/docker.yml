@@ -79,7 +79,7 @@ jobs:
         if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
         uses: docker/build-push-action@v2
         with:
-          context: image/
-          file: image/Dockerfile
+          context: 
+          file: Dockerfile
           tags: |
             andyalex87/sbol-test:${{steps.getrefs.outputs.sha12}}, andyalex87/sbol-test:latest
