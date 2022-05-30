@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 	curl
 	
 RUN apt-get update && \
-	apt install -q openjdk-17-jdk-headless
+	apt install -y openjdk-17-jdk-headless
 	
 RUN curl -L https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip > ijava-kernel.zip
 
