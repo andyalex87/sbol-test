@@ -19,3 +19,9 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
   
 RUN rm ijava-kernel.zip
 
+COPY ./Notebooks /home/jovyan/Notebooks
+
+CMD ["jupyter", "lab", "--ServerApp.token=''","--ServerApp.password=''"]
+
+USER $NB_USER
+
